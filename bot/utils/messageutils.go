@@ -30,7 +30,7 @@ func BuildEmbed(
 	}
 
 	if ctx.PremiumTier() == premium.None {
-		msgEmbed.SetFooter("Powered by ticketsbot.net", "https://ticketsbot.net/assets/img/logo.png")
+		msgEmbed.SetFooter("Powered by NYS Management", "https://nystickets.s3.eu-north-1.amazonaws.com/nystickets/nys.png")
 	}
 
 	return msgEmbed
@@ -49,7 +49,7 @@ func BuildEmbedRaw(
 	}
 
 	if tier == premium.None {
-		msgEmbed.SetFooter("Powered by ticketsbot.net", "https://ticketsbot.net/assets/img/logo.png")
+		msgEmbed.SetFooter("Powered by NYS Management", "https://nystickets.s3.eu-north-1.amazonaws.com/nystickets/nys.png")
 	}
 
 	return msgEmbed

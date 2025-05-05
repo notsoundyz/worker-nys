@@ -61,7 +61,7 @@ func SendWelcomeMessage(
 		}
 
 		if cmd.PremiumTier() == premium.None {
-			formAnswersEmbed.SetFooter("Powered by ticketsbot.net", "https://ticketsbot.net/assets/img/logo.png")
+			formAnswersEmbed.SetFooter("Powered by NYS Management", "https://nystickets.s3.eu-north-1.amazonaws.com/nystickets/nys.png")
 		}
 
 		embeds = append(embeds, formAnswersEmbed)
@@ -577,7 +577,7 @@ func BuildCustomEmbed(
 	}
 
 	if branding {
-		e.SetFooter("Powered by ticketsbot.net", "https://ticketsbot.net/assets/img/logo.png")
+		e.SetFooter("Powered by NYS Management", "https://nystickets.s3.eu-north-1.amazonaws.com/nystickets/nys.png")
 	} else if customEmbed.FooterText != nil {
 		e.SetFooter(*customEmbed.FooterText, utils.ValueOrZero(customEmbed.FooterIconUrl))
 	}

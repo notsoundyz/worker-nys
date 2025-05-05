@@ -76,7 +76,7 @@ func (PremiumCommand) Execute(ctx registry.CommandContext) {
 					Label: ctx.GetMessage(i18n.MessagePremiumOpenServerSelector),
 					Style: component.ButtonStyleLink,
 					Emoji: utils.BuildEmoji("🔗"),
-					Url:   utils.Ptr("https://dashboard.ticketsbot.net/premium/select-servers"),
+					Url:   utils.Ptr("https://dash.nysrp.xyz/premium/select-servers"),
 				}),
 			}, buttons...)
 		}
@@ -135,7 +135,7 @@ func (PremiumCommand) Execute(ctx registry.CommandContext) {
 						Label: ctx.GetMessage(i18n.Website),
 						Style: component.ButtonStyleLink,
 						Emoji: utils.BuildEmoji("🔗"),
-						Url:   utils.Ptr("https://ticketsbot.net/premium"),
+						Url:   utils.Ptr("https://nysrp.xyz/premium"),
 					}),
 				),
 			),
